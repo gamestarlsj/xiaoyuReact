@@ -1,0 +1,21 @@
+{
+  "name": "xiaoyureact",
+  "version": "1.0.0",
+  "description": "localhost",
+  "main": "bundle.js",
+  "dependencies": {
+    "babel-preset-react": "^6.5.0",
+    "react-router": "^2.4.0",
+    "style-loader": "^0.13.1"
+  },
+  "devDependencies": {
+    "gulp-shell": "^0.5.2",
+    "gulp-watch": "^4.3.5",
+    "url-loader": "^0.5.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}

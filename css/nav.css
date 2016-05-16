@@ -1,0 +1,23 @@
+#Xynav {
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    position: relative;
+    background: -webkit-gradient(linear,left top,left bottom,from(#3c5a87),to(#325587));
+    background: -moz-linear-gradient(top,#3c5a87,#325587);
+    background: -o-gradient(linear,left top,left bottom,from(#3c5a87),to(#325587));
+    border-bottom: 2px solid #3e6093;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+#Xynav img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top:5px;
+    right:20px;
+}

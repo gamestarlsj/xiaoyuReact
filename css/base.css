@@ -1,0 +1,63 @@
+@charset "utf-8"
+/*
+*base.css需在所有页面引入,并在其他css之前引入
+*base.css中样式如需更改,请先知会其他开发人员
+*/
+/*初始化样式*/
+::-webkit-scrollbar {width:0px;border:solid 0px rgba(0,0,0,0);}
+::-webkit-input-placeholder { color: #566b82;}
+* {-webkit-tap-highlight-color:rgba(255,255,255,0);outline:0;}
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{
+	margin:0;
+	padding:0;	
+	border: 0 none;
+	-webkit-appearance: none;
+	-webkit-user-select:none;
+	-webkit-touch-callout: none;
+}
+img {border: 0 none;}
+ul,li {list-style-type:none;}
+a:link,a:hover,a:active,a:visited {text-decoration: none;color:#333;}
+.disabled,[disabled] {opacity:1;}
+input:not([type="button"]),textarea {-webkit-user-select:auto;}
+/*页面基础样式*/
+html {height: 100%;}
+body {overflow-x: hidden;width: 100%;height:100%;font-family: "Microsoft YaHei";}
+body {background: #f5f5f9;color: #333;border-bottom: 1px solid #f5f5f9;font-size: 1.4rem;font-weight: 300;}
+body{background: #29343f;}
+button,textarea,input,select,h1,h2,h3,h4,h5,h6 {font-family: "Microsoft YaHei";font-size: 1.4rem;font-weight: 300;}
+.clear {clear: both;}
+/*屏幕适配**rem基准值*/
+@media only screen and (max-width: 320px){html{font-size: 9px;} }
+@media only screen and (min-width: 320px) and (max-width: 352px){html{font-size: 10px;} }
+@media only screen and (min-width: 352px) and (max-width: 384px){html{font-size: 11px;} }
+@media only screen and (min-width: 384px) and (max-width: 416px){html{font-size: 12px;} }
+@media only screen and (min-width: 416px) and (max-width: 448px){html{font-size: 13px;} }
+@media only screen and (min-width: 448px) and (max-width: 480px){html{font-size: 14px;} }
+@media only screen and (min-width: 480px) and (max-width: 512px){html{font-size: 15px;} }
+@media only screen and (min-width: 512px) and (max-width: 544px){html{font-size: 16px;} }
+@media only screen and (min-width: 544px) and (max-width: 576px){html{font-size: 17px;} }
+@media only screen and (min-width: 576px) and (max-width: 608px){html{font-size: 18px;} }
+@media only screen and (min-width: 608px) and (max-width: 640px){html{font-size: 19px;} }
+@media only screen and (min-width: 640px){html{font-size: 20px;} }
+/*公用样式*/
+/*按钮*/
+.btn_com{width: 92%;height: 3.7rem;display: block;margin: 3rem auto 0.8rem;font-size: 1.6rem;color: #fff;line-height: 3.9rem;border-radius: 3px;
+background:#fc4349;}
+.btn_com_un{width: 92%;height: 4rem;display: block;margin: 3rem auto 0.8rem;font-size: 1.6rem;color: #f6f6fa;line-height: 4rem;border-radius: 3px;
+background:#405872;}
+.btn_com_on{background:#dd3e4b;}
+/*输入框*/
+.input-container{width: 96%;background: #29343f;color: #fff;margin: 1.5rem 0 1.5rem 4%;border-bottom:1px solid #3e5366;height: 4.3rem;line-height: 4.3rem;font-size: 0px;}
+.input-logo-area,.input-label{display: inline-block;width: 20%;text-align: center;border-radius: 5px;}
+.input-label{font-size: 1.4rem;width: 27%;text-align: left;padding-left: 5%;}
+.input-logo{width: 2rem;vertical-align: middle;}
+.input_com,.input_com_text{background: rgba(0,0,0,0);color: #fff;display: inline-block;width: 60%;height: 1.5rem;padding: 1.4rem 0;line-height: 1.5em;vertical-align: middle;border-radius: 5px;}
+.input_com_text{width: 50%;vertical-align: super;}
+/*短信验证码输入框*/
+.input_com_ver{background: rgba(0,0,0,0);color: #fff;width: 50.6%;height: 1.5rem;padding:1.4rem 10%;text-align: center;border-radius: 5px;}
+.btn_ver{width: 29%;background: #fc4349;height: 2.5rem;color: #fff;border-radius: 4px;}
+.btn_ver_un{color: #ccc;}
+/*错误提示框样式*/
+.error_box{opacity:0;width: 50%;height:auto;padding: 1rem 5%;background: rgba(30,30,30,0.9);border-radius: 5px;font-size: 1.5rem;color: #fff;text-align: center;position: fixed;top: 50%;
+left: 20%;margin-top: -4rem;z-index: 9999;-webkit-animation:error 2s 1 ease;animation:error 2s 1 ease;}
